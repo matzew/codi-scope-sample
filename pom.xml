@@ -18,7 +18,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>net.wessendorf.facesgoodies</groupId>
   <artifactId>myfaces-cdi</artifactId>
-  <packaging>jar</packaging>
+  <packaging>war</packaging>
   <version>1.0.2-SNAPSHOT</version>
   <name>myfaces-cdi</name>
   <description>Simple Application</description>
