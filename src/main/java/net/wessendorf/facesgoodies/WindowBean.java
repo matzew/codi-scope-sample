@@ -43,7 +43,7 @@ public class WindowBean extends AbstractDemoBean
     // it also invalidates all CODI conversations immediately....
     //windowContext.end()
     
-    conversation.end();
+    conversation.close();
     return null;
   }
 

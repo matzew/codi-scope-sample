@@ -35,7 +35,7 @@ public class CodiConversationBean extends AbstractDemoBean
   
   public String stopMe()
   {
-    conversation.end();
+    conversation.close();
     return null;
   }
   
