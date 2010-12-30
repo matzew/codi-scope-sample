@@ -1,1 +1,17 @@
 Apache MyFaces CODI sample: Different scopes...
+
+Open issue with JBossAS6:
+
+WeldBootstrapBean state=Create: java.lang.RuntimeException: Service class or
+g.apache.myfaces.extensions.cdi.core.impl.projectstage.ProjectStageActivationExtension didn't implement the Extension interface
+        at org.jboss.weld.util.ServiceLoader.loadClass(ServiceLoader.java:261) [:6.0.0.Final]
+        at org.jboss.weld.util.ServiceLoader.loadService(ServiceLoader.java:233) [:6.0.0.Final]
+        at org.jboss.weld.util.ServiceLoader.loadServiceFile(ServiceLoader.java:194) [:6.0.0.Final]
+        at org.jboss.weld.util.ServiceLoader.reload(ServiceLoader.java:157) [:6.0.0.Final]
+        at org.jboss.weld.util.ServiceLoader.iterator(ServiceLoader.java:346) [:6.0.0.Final]
+        at org.jboss.weld.bootstrap.ExtensionBeanDeployer.addExtensions(ExtensionBeanDeployer.java:93) [:6.0.0.Final]
+        at org.jboss.weld.bootstrap.WeldBootstrap.startInitialization(WeldBootstrap.java:333) [:6.0.0.Final]
+        at org.jboss.weld.integration.deployer.env.helpers.BootstrapBean.boot(BootstrapBean.java:92) [:6.0.0.Final]
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) [:1.6.0_21]
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39) [:1.6.0_21]
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25) [:1.6.0_21]
